@@ -1,0 +1,24 @@
+{
+  
+  "manifest_version": 2,
+  
+  "name": "Google Docs Distraction-Free",
+  
+  "short_name": "Google Docs Distraction-Free",
+  
+  "version": "0.0.1",
+  
+  "description": "Change the appearance of Google Docs documents with a beautiful and distraction-free writing environment.",
+  
+  "icons": { "32": "icon-32.png", "48": "icon-48.jpg", "128": "icon-128.jpg" },
+  
+  "homepage_url": "https://github.com/jasantunes/google-docs-distraction-free",
+   
+  "content_scripts": [
+    {
+      "matches": [ "*://docs.google.com/document/*" ],
+      "css": [ "default.css" ]
+    }
+  ]
+
+}
